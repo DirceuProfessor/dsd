@@ -1,5 +1,3 @@
-import unip.dsd.rmi.MensageiroCon;
-
 import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.rmi.NotBoundException;
@@ -12,7 +10,7 @@ public class ClienteMensageiro{
 
     public static void main( String args[] ) {
         try {
-            MensageiroCon m = (MensageiroCon) Naming.lookup( "rmi://localhost/MensageiroService" );
+            MensageiroCon m = (MensageiroCon) Naming.lookup( "rmi://localhost/ServicoMensageiro" );
             System.out.println( m.lerMensagem() );
             m.enviarMensagem( "Hello World!" );
         }

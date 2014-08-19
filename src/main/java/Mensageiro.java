@@ -1,5 +1,3 @@
-import unip.dsd.rmi.MensageiroCon;
-
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 

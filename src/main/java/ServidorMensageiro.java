@@ -1,5 +1,3 @@
-import unip.dsd.rmi.Mensageiro;
-
 import java.rmi.Naming;
 
 /**

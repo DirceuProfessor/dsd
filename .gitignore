@@ -2,8 +2,11 @@
 .idea
 .idea_modules
 .classpath
-target
-project/target
+
+target/
+
+project/target/
+
 *.class
 
 # Mobile Tools for Java (J2ME)
