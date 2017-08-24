@@ -1,4 +1,6 @@
 import java.rmi.Naming;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
 
 /**
  * Created by dirceu on 8/17/14.
@@ -8,7 +10,8 @@ public class ServidorMensageiro {
     public ServidorMensageiro() {
         try {
             Mensageiro m = new Mensageiro();
-            Naming.rebind("rmi://localhost:1099/ServicoMensageiro", m);
+            Registry registry = LocateRegistry.createRegistry(1099);
+            registry.rebind("ServicoMensageiro", m);
         }
         catch( Exception e ) {
             System.out.println( "Trouble: " + e );
