@@ -16,6 +16,6 @@ public class Mensageiro extends UnicastRemoteObject implements MensageiroCon {
     }
 
     public String lerMensagem() throws RemoteException {
-        return "This is not a Hello World! message";
+        return "A aula de DSD é muito complicada mesmo Estudem.";
     }
 }

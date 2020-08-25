@@ -15,7 +15,7 @@ public class ClienteMensageiro{
             Registry registry = LocateRegistry.getRegistry(1099);
             MensageiroCon m = (MensageiroCon) registry.lookup("ServicoMensageiro" );
             System.out.println( m.lerMensagem() );
-            m.enviarMensagem( "Hello World!" );
+            m.enviarMensagem( "Esta matéria é realmente difícill?" );
         }
 
         catch( RemoteException e ) {
